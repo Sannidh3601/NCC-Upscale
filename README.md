@@ -39,7 +39,7 @@ The app opens at `http://localhost:5173`.
 
 | Role     | Email                  | Password     |
 |----------|------------------------|--------------|
-| Admin    | admin@ncc-upscale.com    | Admin@123    |
+| Admin    | admin@ncc.com          | Admin@123    |
 | Employee | sarah@company.com      | Employee@123 |
 | Employee | james@company.com      | Employee@123 |
 | Employee | priya@company.com      | Employee@123 |
