@@ -1,6 +1,7 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { useAuth } from './context/AuthContext';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -25,7 +26,17 @@ import AdminTasks from './pages/admin/AdminTasks';
 
 export default function App() {
   const { user, loading } = useAuth();
-  const gatePassed = typeof window !== 'undefined' && localStorage.getItem('gatePassed') === 'true';
+  const [gatePassed, setGatePassed] = useState(() =>
+    typeof window !== 'undefined' && localStorage.getItem('gatePassed') === 'true'
+  );
+  const location = useLocation();
+
+  // whenever the route changes (e.g. after navigating from gate page), re-read storage
+  useEffect(() => {
+    setGatePassed(
+      typeof window !== 'undefined' && localStorage.getItem('gatePassed') === 'true'
+    );
+  }, [location]);
 
   if (loading) {
     return (
