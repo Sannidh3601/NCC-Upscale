@@ -1,5 +1,5 @@
 import pool from '../db/pool.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 export async function getDashboardStats(req, res, next) {
   try {
