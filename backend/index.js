@@ -21,7 +21,7 @@ const app = express();
 let dbReady = false;
 
 app.use(cors({
-  origin: 'https://ncc-upscale-2.onrender.com/',
+  origin: 'https://ncc-upscale-2.onrender.com',
   credentials: true,
 }));
 app.use(express.json());
