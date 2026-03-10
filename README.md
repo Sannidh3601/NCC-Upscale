@@ -40,11 +40,7 @@ The app opens at `http://localhost:5173`.
 | Role     | Email                  | Password     |
 |----------|------------------------|--------------|
 | Admin    | admin@ncc.com          | Admin@123    |
-| Employee | sarah@company.com      | Employee@123 |
-| Employee | james@company.com      | Employee@123 |
-| Employee | priya@company.com      | Employee@123 |
-| Employee | david@company.com      | Employee@123 |
-| Employee | emily@company.com      | Employee@123 |
+| Employee | vs23@gmail.com         | Teja@1234    |
 
 ## Razorpay Test Payment
 
